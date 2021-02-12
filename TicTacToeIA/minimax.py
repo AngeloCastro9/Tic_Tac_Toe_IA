@@ -41,6 +41,7 @@ def getPositions(board):
     
     return positions
 
+# o minimax trabalha com valores de -1 a 1, cada um representa um token.
 score = {
     "DRAW": 0,
     "X": 1,
