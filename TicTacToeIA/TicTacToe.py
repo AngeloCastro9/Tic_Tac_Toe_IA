@@ -17,19 +17,19 @@ def printBoard(board):
             print("------")
 
 # verifica se os valores informados para jogar sao validos
-def getValidInput(mensagem):
+def getValidInput(message):
     try:
-        n = int(input(mensagem))
+        n = int(input(message))
         if(n >= 1 and n <= 3):
             # precisa ser -1 pois no python a contagem comeca em 0
             print(n)
             return n - 1
         else:
             print("Number must be between 1 and 3")
-            return getValidInput(mensagem)
+            return getValidInput(message)
     except:
         print("invalid number")
-        return getValidInput(mensagem)
+        return getValidInput(message)
 
 # verifica se o moviemento feito e valido
 def checkMovement(board, line , column):
