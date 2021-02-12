@@ -4,6 +4,7 @@ def movementIA(board, player):
 
     #pega todas as posicoes disponiveis, em branco
     possibilities = getPositions(board)
+    #melhor valor para se jogar
     best_value = None
     #melhor movimento se da pensando em todas as possibilities e escolhendo o melhor movimento a se fazer
     best_movement = None
@@ -58,6 +59,7 @@ def minimax(board, player):
     player = (player + 1)%2 #%2 = resto da divisao por 2
     #pega todas as posicoes 
     possibilities = getPositions(board)
+    #melhor valor para se jogar
     best_value = None
     for possibilitie in possibilities:
         # se coloca o token do jogador em todos os campos possiveis
