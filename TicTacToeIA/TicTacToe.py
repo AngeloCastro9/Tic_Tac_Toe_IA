@@ -67,7 +67,7 @@ def checkWinner(board):
 
     #percorre todas as linhas
     for line in range(3):
-        #percorre todas as linhas
+        #percorre todas as colunas
         for column in range(3):
             #se as linhas e colunas forem brancas, nao existe ganhador, ainda!
             if(board[line][column] == blankSpace):
