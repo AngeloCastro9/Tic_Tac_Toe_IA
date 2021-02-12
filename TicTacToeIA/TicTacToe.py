@@ -22,7 +22,6 @@ def getValidInput(message):
         n = int(input(message))
         if(n >= 1 and n <= 3):
             # precisa ser -1 pois no python a contagem comeca em 0
-            print(n)
             return n - 1
         else:
             print("Number must be between 1 and 3")
