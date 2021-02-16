@@ -14,6 +14,14 @@ def movementIA(board, player):
         board[possibilitie[0]][possibilitie[1]] = token[player]
         # chama o algoritmo do minimax
         value = minimax(board, player)
+
+        # descomente para debug
+
+        # print(board)
+        # print(player)
+        
+        # fim debug
+
         # se limpa todos os campos marcados para possibilidade
         board[possibilitie[0]][possibilitie[1]] = blankSpace
         if(best_value is None):
@@ -66,6 +74,14 @@ def minimax(board, player):
         board[possibilitie[0]][possibilitie[1]] = token[player]
         # chama o algoritmo minimax
         value = minimax(board, player)
+
+        # descomente para debug
+
+        # print(board)
+        # print(player)
+
+        # fim debug
+
         # se limpa todos os campos marcados para possibilidade
         board[possibilitie[0]][possibilitie[1]] = blankSpace
         if(best_value is None):

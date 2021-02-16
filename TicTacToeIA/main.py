@@ -4,7 +4,7 @@ from TicTacToe import createBoard, makesMovement,  getValidInput, \
 from minimax import movementIA
 
 # se coloca 1 para o jogador inicar, 0 para a IA
-player = 1
+player = 0
 board = createBoard()
 winner = checkWinner(board)
 while(not winner):
