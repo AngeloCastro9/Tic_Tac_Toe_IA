@@ -27,14 +27,17 @@ def movementIA(board, player):
         if(best_value is None):
             best_value = value
             best_movement = possibilitie
+        #verifica se a IA e o jogador 0 ( o que a IA comeca )
+        elif(player == 0):
+            if(value > best_value):
+                best_value = value
+                best_movement = possibilitie
+        #verifica se a IA e o jogador 1 ( o que o jogador humano comeca )
+        elif(player == 1):
+            if(value < best_value):
+                best_value = value
+                best_movement = possibilitie
 
-        if(value > best_value):
-            print(str(value) + ' to no valor!!!' )
-            print(str(best_value) + ' to no melhor valor hehe')
-            best_value = value
-            best_movement = possibilitie
-            print(str(best_movement) + ' melhor movimento emmm')
-       
     return best_movement[0], best_movement[1]
 
 # pega todas as posicoes disponiveis para se jogar
