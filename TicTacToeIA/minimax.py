@@ -12,7 +12,7 @@ def movementIA(board, player):
     for possibilitie in possibilities:
         # se coloca o token do jogador em todos os campos possiveis
         board[possibilitie[0]][possibilitie[1]] = token[player]
-        # chama o algoritmo do minimax
+        # chama o algoritmo do minimax que irá retornar valores entre -1 e 1 para se fazer a jogada
         value = minimax(board, player)
 
         # descomente para debug
