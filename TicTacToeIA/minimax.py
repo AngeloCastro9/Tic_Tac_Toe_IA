@@ -38,6 +38,8 @@ def movementIA(board, player):
                 best_value = value
                 best_movement = possibilitie
 
+    # a IA sempre irá mostrar 0%, até que o oponente cometa algum erro e ela irá ganhar com certeca
+    print("chance de vitória da IA: ", best_value*100, "%")
     return best_movement[0], best_movement[1]
 
 # pega todas as posicoes disponiveis para se jogar
